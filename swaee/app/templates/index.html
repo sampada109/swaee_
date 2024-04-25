@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Itinerary</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-left">
+      <a href="#" class="navbar-logo">Swaee</a>
+    </div>
+    <div class="navbar-right">
+      <a href="#" class="navbar-link">Sign in</a>
+      <button class="btn-create-account">Create account</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section class="parallax-section home bg1">
+  <div class="content">
+    <h1>Welcome to Your Adventure</h1>
+    <p>Plan your dream vacation with us!</p>
+
+    <!-- Form Section -->
+    <!-- <div id="traveler-info">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" value="Destination">
+      
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="dd-mm-yyyy">
+      
+        <label for="group-size">Group size:</label>
+        <input type="number" id="group-size" name="group-size" value="Group size">
+      </div> -->
+
+  </div>
+</section>
+
+<!-- Itinerary Section -->
+<section class="non-parallax-section itinerary">
+  <div class="np-container">
+    <div class="np-content">
+      <h2>Build Your Itinerary</h2>
+      <p>Customize your travel plans.</p>
+    </div>
+    <div class="np-img">
+      <img src="https://s3-eu-west-1.amazonaws.com/polarsteps/assets/track-6b38413cc6c17cba8a8e.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- Destinations Section -->
+<section class="parallax-section destinations bg2">
+  <div class="content">
+    <h2>Explore Amazing Destinations</h2>
+    <p>Discover new places to visit.</p>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section class="non-parallax-section contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>Get in touch with our team.</p>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="parallax-section testimonials bg3">
+  <div class="content">
+    <h2>Happy Travelers</h2>
+    <p>Read what our customers say about us.</p>
+  </div>
+</section>
+
+
+<!--footer section-->
+<footer>
+		<div class="footer-container">
+			<div class="footer-row">
+				<div class="footer-col-md-3">
+					<h3>About us</h3>
+					<p>Polarsteps is a travel app developed and designed in Amsterdam by passionate travelers. We're on a journey with a clear destination: we want to create the best travel app in the world.</p>
+				</div>
+				<div class="footer-col-md-3">
+					<h3>Help & Support</h3>
+					<ul>
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Send us feedback</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-md-3">
+					<h3>Follow us</h3>
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-md-3">
+					<h3>Partners</h3>
+					<ul>
+						<li><a href="#">mixpanel</a></li>
+						<li><a href="#">LocationIQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col-md-12">
+					<p class="footer-copyright">© 2023 Polarsteps. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: gilroy, "fallback for gilroy", Montserrat, sans-serif
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+    z-index: 1000;
+    box-shadow: none; /* Initially no shadow */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 20%;
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .navbar-logo {
+    color: white; /* Initially white */
+    text-decoration: none;
+    font-size: 2em;
+    font-weight:500;
+    transition: color 0.5s;
+  }
+  
+  .navbar-right .navbar-link {
+    color: white; /* Initially white */
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.5s;
+    font-size: 1em;
+    /* font-weight: 600; */
+  }
+  
+  .btn-create-account {
+    background-color: #de2b52; /* Background color */
+    color: white; /* Text color */
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for shadow */
+  }
+  
+  .btn-create-account:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add slight shadow on hover */
+  }
+  
+  
+  /* Apply styles when navbar is not transparent */
+  .navbar.opaque {
+    background-color: white; /* Change to desired color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow */
+  }
+  
+  .navbar.opaque .navbar-logo,
+  .navbar.opaque .navbar-link,
+  .navbar.opaque .btn-create-account {
+    color: black; /* Change color when navbar is opaque */
+  }
+
+  /* Parallax backgrounds */
+  .bg1 { background-image: url(https://images.unsplash.com/photo-1523496922380-91d5afba98a3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+  .bg2 { background-image: url(https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+  .bg3 { background-image: url(https://images.unsplash.com/photo-1548957175-84f0f9af659e?q=80&w=1782&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+  
+  /* Parallax effect */
+  .parallax-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Non-parallax section */
+  .non-parallax-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color:white; /* Example background color */
+  }
+
+
+  .np-container{
+    background-color: rgb(228, 89, 117);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .np-content{
+    background-color: burlywood;
+  }
+
+  .np-img{
+    background-color: plum;
+    height: auto;
+    width:auto;
+  }
+
+  .np-img img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  
+  .content {
+    text-align: center;
+  }
+
+   /* hero form section */
+   /* #traveler-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: purple;
+    border-radius: 50px;
+    padding: 15px;
+  }
+
+  #traveler-info label {
+    margin-bottom: 5px;
+  }
+
+  #traveler-info input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-lets-go {
+    background-color: #e87777;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-lets-go:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  } */
+
+
+
+
+
+  
+  /* Fade-in animation */
+  .animated {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  /* footer section */
+
+  footer {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .footer-col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .footer-container p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-container li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-container a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+
